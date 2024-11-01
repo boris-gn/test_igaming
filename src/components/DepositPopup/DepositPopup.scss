@@ -1,0 +1,159 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background: #000000cc;
+  overflow: unset;
+}
+
+.popup-wrapper > .mobile-popup {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: unset;
+}
+
+.deposit-popup,
+.mobile-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #262626;
+  color: #fff;
+  border-radius: 8px;
+  width: 710px;
+
+  .popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 24px;
+
+    .back-button {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      svg {
+        transform: rotate(90deg);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .balance-info {
+    background-color: #0044cc;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 24px;
+
+    strong {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32.78px;
+      text-align: left;
+    }
+  }
+
+  .payment-dropdown {
+    padding: 0 32px;
+  }
+
+  .amount-section {
+    margin: 24px 0;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24.59px;
+      text-align: left;
+    }
+
+    .amount-display {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 8px 0;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+
+    .amount-buttons {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+
+      div {
+        flex: 1;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    }
+
+    .amount-range {
+      font-size: 12px;
+      color: #b0b0b0;
+      margin-top: 16px;
+    }
+  }
+
+  .promo-code-section {
+    padding: 0 32px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 21.86px;
+      text-align: left;
+    }
+
+    .promo-code-actions {
+      justify-content: space-between;
+      gap: 30px;
+
+      div {
+        flex: 1;
+      }
+    }
+  }
+  .popup-button {
+    padding: 32px;
+
+    button {
+      width: 100%;
+    }
+  }
+}

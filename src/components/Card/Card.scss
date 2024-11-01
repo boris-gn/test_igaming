@@ -1,0 +1,60 @@
+.card {
+  background-color: #30363e;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+  width: 172px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 5px 0px #0000000d;
+  box-shadow: -5px 0px 5px 0px #00000005;
+  padding: 20px 0 12px 0;
+  position: relative;
+
+  @media (max-width: 768px) {
+    width: 130px;
+    height: 80px;
+    padding-top: 12px;
+  }
+
+  .card-label {
+    background-color: #2d69eb;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 2px;
+    position: absolute;
+    top: -8px;
+    left: calc(50% - 34px);
+    font-size: 8px;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: 0px 4px 6px 0px #00000026;
+  }
+
+  .card-label-trusted {
+    background: #fc3d40;
+  }
+
+  .card-logo {
+    height: 40px;
+
+    @media (max-width: 768px) {
+      height: 20px;
+    }
+  }
+
+  .card-name {
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 6px;
+    margin-bottom: 2px;
+  }
+
+  .card-commission {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ccc;
+  }
+}

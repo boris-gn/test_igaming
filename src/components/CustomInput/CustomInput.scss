@@ -1,0 +1,20 @@
+.custom-input {
+  display: flex;
+  align-items: center;
+  background-color: #2e333a;
+  padding: 10px 16px;
+  border-radius: 4px;
+
+  .custom-input-field {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
